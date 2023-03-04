@@ -1,50 +1,55 @@
-@media screen and (min-width: 968px){
-    :root{
-        --mb-1-5: 1.5rem;
-    }
-}
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+.link-custom {
+    font-weight: 700;
+    position: relative;
+    margin-left: 50px;
+    font-family: sans-serif;
+    
 }
 
-html{
-    scroll-behavior: smooth;
-}
-
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-.containerr{
-    max-width: 768px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-}
-
-.grid{
-    display: grid;
-    gap: 1.5rem;
-}
-
-.header {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #0AF747;
+    position: absolute;
     left: 0;
-    z-index: 100;
-    background-color: black;
+    top: 110%;
+    transition: all 0.4s;
+    
 }
 
-.nav {
-    max-width: 968px;
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.link-custom:hover::after {
+    width: 100%;
 }
+
+.luz {
+    float: left;
+    width: 40%;
+    margin-left: 100px;
+    
+}
+
+.cajas {
+    margin-left: 100px;
+}
+
+/* Estilos para el modo claro */
+.modo-claro {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Estilos para el modo oscuro */
+  .modo-oscuro {
+    background-color: black;
+    color: white;
+  }
+
+.nav-link{
+    color: #0AF747;
+}
+
+.letras{
+    color: #0AF747;
+}
+
