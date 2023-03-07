@@ -36,12 +36,12 @@
 /* Estilos para el modo claro */
 .modo-claro {
     background-color: white;
-    color: black;
+    color: #363434;
   }
   
   /* Estilos para el modo oscuro */
   .modo-oscuro {
-    background-color: black;
+    background-color: #363434;
     color: white;
   }
 
@@ -57,15 +57,16 @@
     color: #0AF747;
 }
 
-
+/* INICIO */
 
 .full-height {
-    min-height: 60vh;
+    min-height: 70vh;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 2px solid rgba(255,255,255, 0.1);
+    margin-left: 150px;
 }
+
