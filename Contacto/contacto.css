@@ -1,11 +1,52 @@
+.link-custom {
+  font-weight: 700;
+  position: relative;
+  margin-left: 50px;
+  font-family: sans-serif;
+  
+}
+
+.link-custom::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #0AF747;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+  
+}
+
+.link-custom:hover::after {
+  width: 100%;
+}
+
+.luz {
+  float: left;
+  width: 40%;
+  margin-left: 100px;
+  
+}
+
+
 /* Estilos para el modo claro */
 .modo-claro {
-    background-color: white;
-    color: #363434;
-  }
-  
-  /* Estilos para el modo oscuro */
-  .modo-oscuro {
-    background-color: #363434;
-    color: white;
-  }
+  background-color: white;
+  color: #363434;
+}
+
+/* Estilos para el modo oscuro */
+.modo-oscuro {
+  background-color: #363434;
+  color: white;
+}
+
+.nav-link{
+  color: #0AF747;
+}
+
+
+.tipeo{
+  color: #0AF747;
+}
