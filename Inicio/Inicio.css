@@ -48,7 +48,7 @@
 
 
 .tipeo{
-    color: #0AF747;
+    color: #0BE312;
 }
 
 /* INICIO */
@@ -64,3 +64,17 @@
     margin-left: 150px;
 }
 
+.full-heightt {
+    min-height: 65vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-left: 150px;
+}
+
+.sobre-mi{
+    color: #0BE312;
+}
