@@ -24,3 +24,5 @@ const typed = new Typed('.typed', {
   typeSpeed: 75,
   backSpeed:40
 });
+
+//tecnologias
