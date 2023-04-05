@@ -50,3 +50,42 @@
 .tipeo{
   color: #0AF747;
 }
+
+/* Estilo de formulario */
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: #138C0F;
+    border-color: black;
+    color: yellow;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: green;
+    color: yellow;
+    border-color: #0AF747;
+}
+
+#contacto .form-control {
+    background-color: white;
+    border-color: #138C0F;
+    color: blueviolet;
+}
+
+#contacto .form-control:focus{
+    border-color: #0AF747;
+    box-shadow: none;
+}
+
+#contacto .form-control::placeholder{
+    color: darkgreen;
+}
+
+#contacto input.form-control{
+    height: 44px;
+}
