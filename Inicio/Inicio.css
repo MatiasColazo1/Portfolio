@@ -29,6 +29,38 @@
     
 }
 
+/* navbar */
+
+.header{
+    background-color: #EBE6E5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #0AF747;
+    text-decoration: none;
+}
+
+
 
 /* Estilos para el modo claro */
 .modo-claro {
