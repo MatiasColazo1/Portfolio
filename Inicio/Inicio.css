@@ -1,9 +1,9 @@
+/* navbar */
 .link-custom {
     font-weight: 700;
     position: relative;
     margin-left: 50px;
     font-family: sans-serif;
-    
 }
 
 .link-custom::after {
@@ -22,15 +22,7 @@
     width: 100%;
 }
 
-.luz {
-    float: left;
-    width: 40%;
-    margin-left: 100px;
-    
-}
 
-/* navbar */
- 
 .header{
     background-color: #fff;
     display: flex;
@@ -44,18 +36,6 @@
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.header .logo img{
-    height: 30px;
-    width: auto;
-}
-
-.wrapper {
-    margin-right: auto;
-}
-
-.header .nav-links{
-    list-style: none;
-}
 
 .header .nav-links li{
     display: inline-block;
@@ -73,29 +53,11 @@
 }
 
 
-/* Estilos para el modo claro */
-.modo-claro {
-    background-color: white;
-    color: #363434;
-  }
-  
-  /* Estilos para el modo oscuro */
-  .modo-oscuro {
-    background-color: #363434;
-    color: white;
-  }
-
-.nav-link{
-    color: #0AF747;
-}
-
+/*perfil*/
 
 .tipeo{
     color: #0BE312;
 }
-
-
-/* INICIO */
 
 .full-height {
     min-height: 76vh;
@@ -106,19 +68,9 @@
     padding-top: 80px;
     padding-bottom: 80px;
     margin-left: 150px;
-
 }
 
-.full-heightt {
-    min-height: 65vh;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    margin-left: 150px;
-}
+
 
 span{
     font-size: 50px;
