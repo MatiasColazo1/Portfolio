@@ -70,7 +70,7 @@
   clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
 }
 
-img{
+.img{
   width: 100%;
   display: block;
   border-radius: 20px 20px 0 0;
@@ -116,4 +116,19 @@ img{
   line-height: 30px;
   font-weight: 400;
 
+}
+
+
+/* footer */
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  
+}
+
+.footer {
+  text-align: center;
+  margin-top: 100px;
 }

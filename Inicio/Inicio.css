@@ -32,24 +32,26 @@
 /* navbar */
  
 .header{
-    background-color: #EBE6E5;
+    background-color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    height: 85px;
+    height: 70px;
     padding: 5px 10%;
     position:fixed;
 	z-index:1000;
     width:100%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
 
 .header .logo img{
     height: 30px;
     width: auto;
-    
 }
 
+.wrapper {
+    margin-right: auto;
+}
 
 .header .nav-links{
     list-style: none;
@@ -61,8 +63,8 @@
 }
 
 .header .nav-links a{
-    font-size: 700;
-    color: #ffff;
+    font-size: 24px;
+    color: #000;
     text-decoration: none;
 }
 
@@ -96,7 +98,7 @@
 /* INICIO */
 
 .full-height {
-    min-height: 70vh;
+    min-height: 76vh;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -123,7 +125,19 @@ span{
 }
 
 
-/* tecnologias */
+/* footer */
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 100px;
+  }
 
 
 
