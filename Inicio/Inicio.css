@@ -1,6 +1,5 @@
 /* navbar */
 .link-custom {
-    font-weight: 700;
     position: relative;
     margin-left: 50px;
     font-family: sans-serif;
@@ -13,9 +12,8 @@
     background-color: #0AF747;
     position: absolute;
     left: 0;
-    top: 110%;
+    top: 90%;
     transition: all 0.4s;
-    
 }
 
 .link-custom:hover::after {
