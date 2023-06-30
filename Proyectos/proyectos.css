@@ -5,6 +5,10 @@
   
 }
 
+.my-list {
+  margin-top: 10px !important;
+}
+
 .link-custom::after {
   content: "";
   width: 0%;
@@ -21,12 +25,6 @@
   width: 100%;
 }
 
-.luz {
-  float: left;
-  width: 40%;
-  margin-left: 100px;
-  
-}
 
 
 

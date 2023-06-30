@@ -16,6 +16,10 @@
     transition: all 0.4s;
 }
 
+.my-list {
+    margin-top: 10px !important;
+  }
+
 .link-custom:hover::after {
     width: 100%;
 }
