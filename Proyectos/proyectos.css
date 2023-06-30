@@ -29,26 +29,6 @@
 }
 
 
-/* Estilos para el modo claro */
-.modo-claro {
-  background-color: white;
-  color: #363434;
-}
-
-/* Estilos para el modo oscuro */
-.modo-oscuro {
-  background-color: #363434;
-  color: white;
-}
-
-.nav-link{
-  color: #0AF747;
-}
-
-
-.tipeo{
-  color: #0AF747;
-}
 
 /* Proyecto */
 .cards{
@@ -56,65 +36,6 @@
   grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
   padding: 20px;
   grid-gap: 40px;
-}
-
-.card{
-  background-color: black;
-  border-radius: 20px;
-  box-shadow: 0 0 30px black;
-}
-
-.contenedor{
-  position:relative;
-  clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
-}
-
-.img{
-  width: 100%;
-  display: block;
-  border-radius: 20px 20px 0 0;
-}
-
-.contenedor:after{
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 20px 20px 0 0;
-  opacity: 0.7;
-}
-
-.card1>.contenedor:after{
-  background-image: linear-gradient(135deg, #0100ec, #fb36f4);
-}
-
-.card2>.contenedor:after{
-  background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
-}
-
-.card3>.contenedor:after{
-  background-image: linear-gradient(135deg, #ffab1d, #f8501c);
-}
-
-.details{
-  padding: 20px 10px;
-}
-
-.details>h3{
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 18px;
-  margin: 10px 0 15px 0;
-}
-
-.details>p{
-  color: #a0a0a0;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 400;
-
 }
 
 
@@ -142,7 +63,6 @@
   height: 70px;
   padding: 5px 10%;
   position:fixed;
-z-index:1000;
   width:100%;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
