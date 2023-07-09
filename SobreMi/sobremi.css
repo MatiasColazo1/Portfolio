@@ -54,7 +54,7 @@
   color: #0AF747;
 }
 
-/* tecnologias */
+/* sobre mi */
 .full-height {
   min-height: 76vh;
   height: 100%;
@@ -65,20 +65,17 @@
   padding-bottom: 80px;
 }
 
-.card-img-top {
-  height: 200px; /* Establece la altura deseada para las imágenes */
-  object-fit: cover; /* Ajusta el tamaño de la imagen sin deformarla */
-  width: 100%; /* Ajusta el ancho de la imagen para que ocupe el contenedor */
+.subtitle{
+  color: #0AF747;
+  margin: 0 50px;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
-  z-index: 1;
+.parrafo{
+  margin: 10px 80px
 }
 
-.card {
-  margin-bottom: 20px;
-}
+
+
 
 /* footer */
 
