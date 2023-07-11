@@ -60,6 +60,10 @@
   color: #0BE312;
 }
 
+h1,p{
+  margin-bottom: 0 !important;
+}
+
 .full-height {
   min-height: 76vh;
   height: 100%;

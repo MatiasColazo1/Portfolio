@@ -29,11 +29,45 @@
 
 
 /* Proyecto */
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .cards{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
   padding: 20px;
   grid-gap: 40px;
+}
+
+.card{
+  padding: 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-family: sans-serif;
+  position: relative;
+  margin-left: 50px;
+}
+.link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #0AF747;
+  position: absolute;
+  left: 0;
+  top: 90%;
+  transition: all 0.4s;
+}
+.link:hover::after {
+  width: 100%;
+}
+a:hover{
+  color:#0AF747;
 }
 
 

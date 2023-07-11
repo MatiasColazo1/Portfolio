@@ -63,7 +63,7 @@
   flex-direction: column;
   justify-content: center;
   padding-top: 80px;
-  padding-bottom: 80px;
+  
 }
 
 /* sobre mi */
@@ -73,12 +73,22 @@
 }
 
 .parrafo{
-  margin: 10px 80px
+  margin: 10px 80px;
+  font-family: Georgia, Cambria, Times, "Times New Roman", serif;
 }
 
 /* tecnologias */
-.row{
-  margin: 0 50px;
+.row {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 30px !important;
+  height: 220px;
 }
 /* footer */
 
