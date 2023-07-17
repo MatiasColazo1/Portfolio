@@ -1,12 +1,8 @@
+/* navbar */
 .link-custom {
   position: relative;
   margin-left: 50px;
   font-family: sans-serif;
-  
-}
-
-.my-list {
-  margin-top: 10px !important;
 }
 
 .link-custom::after {
@@ -18,7 +14,10 @@
   left: 0;
   top: 90%;
   transition: all 0.4s;
-  
+}
+
+.my-list {
+  margin-top: 15px !important;
 }
 
 .link-custom:hover::after {
@@ -26,6 +25,33 @@
 }
 
 
+.header{
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  padding: 5px 10%;
+  position:fixed;
+  width:100%;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links a{
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+  color: #0AF747;
+}
 
 
 /* Proyecto */
@@ -33,6 +59,10 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+}
+
+.card-img-top{
+  height: 50%;
 }
 
 .cards{
@@ -51,7 +81,7 @@
   text-decoration: none;
   font-family: sans-serif;
   position: relative;
-  margin-left: 50px;
+  margin: 25%;
 }
 .link::after {
   content: "";
@@ -70,6 +100,11 @@ a:hover{
   color:#0AF747;
 }
 
+.texto{
+  text-align: center;
+  margin-bottom: 0;
+}
+
 
 /* footer */
 
@@ -82,50 +117,7 @@ a:hover{
 
 .footer {
   text-align: center;
-  margin-top: 100px;
-}
-
-/* navbar */
- 
-.header{
-  background-color: #fff;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 70px;
-  padding: 5px 10%;
-  position:fixed;
-  z-index: 100;
-  width:100%;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.header .logo img{
-  height: 30px;
-  width: auto;
-}
-
-.wrapper {
-  margin-right: auto;
-}
-
-.header .nav-links{
-  list-style: none;
-}
-
-.header .nav-links li{
-  display: inline-block;
-  padding: 0 20px;
-}
-
-.header .nav-links a{
-  font-size: 24px;
-  color: #000;
-  text-decoration: none;
-}
-
-.header .nav-links li a:hover{
-  color: #0AF747;
+  margin-top: 2%;
 }
 
 
