@@ -37,20 +37,118 @@
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.mobile-menu {
+  display: none;
+}
 
-.header .nav-links li{
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.menu-icon span {
+  background-color: #000;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background-color 0.3s ease;
+  width: 20px;
+}
+
+.menu-icon span:before,
+.menu-icon span:after {
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.menu-icon span:before {
+  top: -6px;
+}
+
+.menu-icon span:after {
+  top: 6px;
+}
+
+#toggle-menu {
+  display: none;
+}
+
+#toggle-menu:checked ~ .nav-links {
+  display: flex;
+  flex-direction: column; /* Alinear los elementos en una columna */
+  align-items: center; /* Centrar los elementos verticalmente */
+  position: absolute;
+  top: 100%; /* Colocar los elementos debajo del botón del menú */
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#toggle-menu:checked ~ .menu-icon span {
+  background-color: transparent;
+}
+
+#toggle-menu:checked ~ .menu-icon span:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#toggle-menu:checked ~ .menu-icon span:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links li {
   display: inline-block;
   padding: 0 20px;
 }
 
-.header .nav-links a{
+.nav-links a {
   font-size: 24px;
   color: #000;
   text-decoration: none;
 }
 
-.header .nav-links li a:hover{
+.nav-links li a:hover {
   color: #0AF747;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 5px 5%;
+  }
+
+  .header .nav-links li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
 }
 
 
