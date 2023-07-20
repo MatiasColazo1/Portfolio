@@ -110,11 +110,17 @@ dl, ol, ul {
     margin-top: 1.5rem;
   }
   .nav > #nav-check:checked ~ .nav-list {
-    height: calc(40vh - 50px);
+    height: calc(50vh - 50px);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
 
+ 
+  .header .nav-links li{
+    padding: 0;
+  }
   
 }
+
 
 
 
@@ -158,6 +164,7 @@ dl, ol, ul {
   left: 0;
   top: 90%;
   transition: all 0.4s;
+  margin-top: 3px;
 }
 .link:hover::after {
   width: 100%;

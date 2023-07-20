@@ -8,17 +8,19 @@
 .link-custom::after {
   content: "";
   width: 0%;
+  margin-top: 4px;
   height: 2px;
   background-color: #0AF747;
   position: absolute;
   left: 0;
   top: 90%;
   transition: all 0.4s;
-}
 
+}
+/*
 .my-list {
   margin-top: 15px !important;
-}
+}*/
 
 .link-custom:hover::after {
   width: 100%;
@@ -34,121 +36,88 @@
   padding: 5px 10%;
   position:fixed;
   width:100%;
+  z-index: 9999;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.mobile-menu {
-  display: none;
-}
 
-.menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
-
-.menu-icon span {
-  background-color: #000;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background-color 0.3s ease;
-  width: 20px;
-}
-
-.menu-icon span:before,
-.menu-icon span:after {
-  background-color: #000;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: transform 0.3s ease;
-  width: 100%;
-}
-
-.menu-icon span:before {
-  top: -6px;
-}
-
-.menu-icon span:after {
-  top: 6px;
-}
-
-#toggle-menu {
-  display: none;
-}
-
-#toggle-menu:checked ~ .nav-links {
-  display: flex;
-  flex-direction: column; /* Alinear los elementos en una columna */
-  align-items: center; /* Centrar los elementos verticalmente */
-  position: absolute;
-  top: 100%; /* Colocar los elementos debajo del botón del menú */
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-#toggle-menu:checked ~ .menu-icon span {
-  background-color: transparent;
-}
-
-#toggle-menu:checked ~ .menu-icon span:before {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-#toggle-menu:checked ~ .menu-icon span:after {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
-}
-
-.nav-links li {
+.header .nav-links li{
   display: inline-block;
   padding: 0 20px;
 }
 
-.nav-links a {
+.header .nav-links a{
   font-size: 24px;
   color: #000;
   text-decoration: none;
 }
 
-.nav-links li a:hover {
+.header .nav-links li a:hover{
   color: #0AF747;
 }
 
-@media only screen and (max-width: 768px) {
-  .header {
-    padding: 5px 5%;
-  }
+/**/
 
-  .header .nav-links li {
-    display: block;
-    padding: 10px 0;
-  }
 
-  .mobile-menu {
-    display: block;
-  }
+dl, ol, ul {
+  margin: 0 !important;
+}
 
-  .nav-links {
+
+
+.nav > #nav-check {
     display: none;
+}
+@media (max-width: 780px) {
+  .nav {
+    padding: 1rem;
+    
   }
+  .nav > .nav-btn {
+    display: inline-block;
+    right: 0;
+    top: 0;
+    padding-top: 0.2rem;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid ;
+  }
+  .nav > .nav-list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    height: 0;
+    transition: all 0.3s ease-in;
+    top: 60px;
+    left: 0;
+    overflow: hidden;
+    background-color: #fff;
+  }
+
+  .nav > .nav-list > li {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .nav > #nav-check:checked ~ .nav-list {
+    height: calc(50vh - 50px);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header .nav-links li{
+    padding: 0;
+  }
+  
 }
 
 
@@ -179,6 +148,40 @@ span{
   font-size: 50px;
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1;
+}
+
+.image {
+  flex-shrink: 0;
+  margin-left: 20px; /* Puedes ajustar el espacio entre el texto y la imagen aquí */
+}
+
+@media (max-width: 767px) {
+  .container {
+      flex-direction: column; /* Cambiar la dirección a column para apilar los elementos en el modo celular */
+  }
+  .image{
+      margin-left: 0; /* Eliminar el margen izquierdo para que la imagen esté centrada en el modo celular */
+  }
+
+  .full-height{
+    min-height: 76vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: 0;
+  }
+}
 
 /* footer */
 
