@@ -10,7 +10,7 @@ const typedHello = new Typed('.typed-hello', {
 });
 
 const typedLoop = new Typed('.typed-loop', {
-  strings: ['Developer JR<br>Full Stack', 'Quality Assurance<br>Analyst'],
+  strings: ['Developer Full Stack', 'QA Analyst'],
   typeSpeed: 75,
   backSpeed: 40,
   loop: true,

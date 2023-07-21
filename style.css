@@ -160,7 +160,14 @@ span{
 
 .image {
   flex-shrink: 0;
-  margin-left: 20px; /* Puedes ajustar el espacio entre el texto y la imagen aquí */
+  margin-left: 20px;
+}
+
+.perfil{
+  width: 60%;
+  height: 70%;
+  border-radius: 70%;
+  border: 3px solid #ccc;
 }
 
 @media (max-width: 767px) {
@@ -168,9 +175,10 @@ span{
       flex-direction: column; /* Cambiar la dirección a column para apilar los elementos en el modo celular */
   }
   .image{
-      margin-left: 0; /* Eliminar el margen izquierdo para que la imagen esté centrada en el modo celular */
+      display: flex;
+      margin-left: 0;
+      justify-content: center; /* Eliminar el margen izquierdo para que la imagen esté centrada en el modo celular */
   }
-
   .full-height{
     min-height: 76vh;
   height: 100%;
