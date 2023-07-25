@@ -118,6 +118,10 @@ dl, ol, ul {
   .header .nav-links li{
     padding: 0;
   }
+
+  .footer{
+    margin-bottom: 4px;
+  }
   
 }
 
