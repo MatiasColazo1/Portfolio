@@ -170,14 +170,22 @@ span{
   border: 3px solid #ccc;
 }
 
+@media (max-width: 991px) {
+  .image{
+    display: flex;
+    margin-left: 0;
+    justify-content: center; 
+}
+}
+
 @media (max-width: 767px) {
   .container {
-      flex-direction: column; /* Cambiar la dirección a column para apilar los elementos en el modo celular */
+      flex-direction: column; 
   }
   .image{
       display: flex;
       margin-left: 0;
-      justify-content: center; /* Eliminar el margen izquierdo para que la imagen esté centrada en el modo celular */
+      justify-content: center; 
   }
   .full-height{
     min-height: 76vh;
