@@ -9,65 +9,108 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="shortcut icon" href="./Imagenes/icono.png" />
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/8c40961187.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/8c40961187.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="SobreMi/sobremi.css" />
+    <link rel="stylesheet" href="Proyectos/proyectos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!--NAV BAR-->
-
-    <header class="header">
-      <nav class="nav menu-fixed">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <ul class="nav-list nav-links">
-          <li><a class="active link-custom" aria-current="page" href="#">Inicio</a></li>
-          <li><a class="active link-custom" aria-current="page" href="./Proyectos/proyectos.html">Proyectos</a></li>
-          <li><a class="active link-custom" aria-current="page" href="./SobreMi/sobremi.html">Sobre Mí</a></li>
-        </ul>
-      </nav>
-    </header>
-        
-      <!--NAV BAR-->
-
-      <!--PERFIL-->
-      <div class="container">
-        <div class="content">
-            <div class="full-height">
-                <h1><span class="typed-hello"></span></h1>
-                <p><span class="typed-loop"></span></p>
-            </div>
-        </div>
-        <div class="image">
-            <img class="perfil" src="./Imagenes/matias(1).jpg" alt="matias">
-        </div>
+  <main>
+    <h1 class="main-title"><canvas id="particleCanvas"></canvas></h1>
+    <div class="main-title-text">
+      Desarrollador Full Stack
     </div>
-      <!--PERFIL-->
+    <a href="#sobremi-section" class="scroll-arrow">
+      <svg class="arrow-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </a>
+  </main>
+
+  <div id="sobremi-section"></div>
+  <div id="proyectos-section"></div>
 
   <footer class="footer">
-    <div>
-      <h3>Podes contactarme por: </h3>
-    <div>
-    <a target="_blank" href="mailto:matias@itdeveloper.ar"><img src="./Imagenes/5968534.png" class="logo"></a>
-    <a target="_blank" href="https://github.com/MatiasColazo1"><img src="./Imagenes/github-original.svg" class="logo"></a>
-    <a target="_blank" href="https://www.linkedin.com/in/matias-colazo/"><img src="./Imagenes/linkedin-original.svg" class="logo"></a>
-    <a target="_blank" href="https://discord.com/users/511602986594729985"><img src="./Imagenes/descarga.png" class="logo"></a>
-  </div>
-  </div>
+    <div class="container">
+      <div class="icon-group">
+        <a href="mailto:mati.colazo97@gmail.com" class="icon-link" aria-label="Email">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+        </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/matias-colazo/" class="icon-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a href="https://github.com/MatiasColazo1" class="icon-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+        </svg>
+        </a>
+      </div>
+    </div>
   </footer>
-
-  <!-- FOOTER-->
-
-      
+  
+  <script src="script.js"></script>
+  <script src="SobreMi/sobremi.js"></script>
+  <script src="Proyectos/proyectos.js"></script>
+  <script>
+    // Cargar las secciones cuando se hace scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const sections = [
+        {
+          id: 'sobremi-section',
+          url: 'SobreMi/sobremi.html',
+          loaded: false,
+          onLoad: initSobreMi
+        },
+        {
+          id: 'proyectos-section',
+          url: 'Proyectos/proyectos.html',
+          loaded: false,
+          onLoad: initProyectos
+        },
     
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src='script.js'></script>
+      ];
+
+      // Función para verificar si el elemento está en el viewport
+      function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+        );
+      }
+
+      // Función para cargar el contenido de una sección
+      function loadSectionContent(section) {
+        if (!section.loaded) {
+          const element = document.getElementById(section.id);
+          if (isElementInViewport(element)) {
+            fetch(section.url)
+              .then(response => response.text())
+              .then(html => {
+                element.innerHTML = html;
+                section.loaded = true;
+                if (section.onLoad) {
+                  section.onLoad();
+                }
+              })
+              .catch(error => console.error(`Error cargando la sección ${section.id}:`, error));
+          }
+        }
+      }
+
+      // Verificar todas las secciones al cargar la página
+      sections.forEach(loadSectionContent);
+
+      // Verificar todas las secciones al hacer scroll
+      window.addEventListener('scroll', () => {
+        sections.forEach(loadSectionContent);
+      });
+    });
+  </script>
 </body>
 </html>
