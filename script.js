@@ -167,8 +167,17 @@ window.addEventListener('touchstart', () => isTouching = true);
 window.addEventListener('touchend', () => isTouching = false);
 window.addEventListener('touchmove', e => {
   if (e.touches.length > 0) {
-    e.preventDefault();
-    mouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    if (!isMobile) {
+      e.preventDefault();
+      mouse = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+    } else {
+      const touch = e.touches[0];
+      const rect = canvas.getBoundingClientRect();
+      mouse = {
+        x: touch.clientX - rect.left,
+        y: touch.clientY - rect.top
+      };
+    }
   }
 }, { passive: false });
 
